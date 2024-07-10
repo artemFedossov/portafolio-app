@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Digital-7', Arial, sans-serif;
+    /* border: 1px solid white; */
+}
+
+:root {
+    --color-main: black;
+    --color-font-primary: rgb(2, 202, 2);
+    --color-font-secondary: rgb(2, 107, 2);
+}
+
+@font-face {
+    font-family: 'Digital-7';
+    src: url('../assets/fonts/Exo-Space-.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+    background-color: var(--color-main);
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerLogo {
+    display: flex;
+}
+
+.containerLogo .logo {
+    width: 200px;
+    margin: 10px;
+    filter: brightness(300%);
+}
+
+.containerLogo .titleLogo {
+    color: var(--color-font-primary);
+    display: block;
+    padding-top: 50px;
+    flex-basis: 100px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.containerLogo .subTitle {
+    color: var(--color-font-secondary);
+    padding-top: 130px;
+    margin-left: -30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+
+}
+
+nav .containerNav {
+    display: flex;
+}
+
+.containerNav li {
+    display: flex;
+    margin: 10px;
+}
+
+.containerNav li a {
+    color: var(--color-font-primary);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 250ms;
+}
+
+.containerNav li a:hover {
+      font-size: 20px;
+}
