@@ -27,6 +27,7 @@
 
 body {
     background-color: var(--color-main);
+    color: var(--color-font-primary);
 }
 
 .header {
@@ -93,8 +94,11 @@ nav .containerNav {
 
 .containerText {
     width: 90%;
-    margin: 10px
-    
+    margin: 10px  
+}
+
+.text:hover {
+    box-shadow: 0 0 20px rgba(149, 238, 178, 1);
 }
 
 .text {
@@ -117,17 +121,26 @@ nav .containerNav {
     border-radius: 10px;
 }
 
-.containerImg {
-    width: 200%;
+.containerInicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.containerCenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-img {
-    width: 100%;
-    border-radius: 10px;
-}
-.containerInicio {
-    display: flex;
-}
+.conteinerAnimation {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    background-color: var(--color-main); /* Color de fondo del contenedor */
+  }
+  
+  .logoAnimation {
+    position: absolute;
+    will-change: transform;
+  }

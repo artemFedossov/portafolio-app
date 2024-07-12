@@ -1,0 +1,42 @@
+[
+    {
+        "id" : 1,
+        "name" : "react",
+        "img" : "/img/react.png"
+    },
+    {
+        "id" : 2,
+        "name" : "bootstrap",
+        "img" : "/img/bootstrap.png"
+    },
+    {
+        "id" : 3,
+        "name" : "code",
+        "img" : "/img/code.png"
+    },
+    {
+        "id" : 4,
+        "name" : "css",
+        "img" : "/img/css.png"
+    },
+    {
+        "id" : 5,
+        "name" : "html",
+        "img" : "/img/html.png"
+    },
+    {
+        "id" : 6,
+        "name" : "js",
+        "img" : "/img/js.png"
+    },
+    {
+        "id" : 7,
+        "name" : "sass",
+        "img" : "/img/sass.png"
+    },
+    {
+        "id" : 8,
+        "name" : "python",
+        "img" : "/img/python.png"
+    }
+]

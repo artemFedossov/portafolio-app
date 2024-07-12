@@ -1,4 +1,5 @@
 import React from 'react'
+import { LogoAnimation } from './LogoAnimation'
 
 export const Home = () => {
   return (
@@ -27,8 +28,9 @@ export const Home = () => {
             </p>
           </div>
         </div>
-        <div className='containerImg'>
-          <img src="/img/imagen-inicio.png" alt="" />
+        <div className='containerCenter'>
+        <LogoAnimation/>
+
         </div>
       </div>
       
