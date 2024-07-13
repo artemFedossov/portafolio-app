@@ -89,12 +89,12 @@ nav .containerNav {
 }
 
 .containerNav li a:hover {
-      font-size: 20px;
+    font-size: 20px;
 }
 
 .containerText {
     width: 90%;
-    margin: 10px  
+    margin: 10px
 }
 
 .text:hover {
@@ -112,7 +112,7 @@ nav .containerNav {
 }
 
 .textName {
-    background-color: rgba(2, 107, 2,.200);
+    background-color: rgba(2, 107, 2, .200);
     color: var(--color-font-primary);
     width: 200px;
     margin: 10px;
@@ -137,10 +137,70 @@ nav .containerNav {
     width: 500px;
     height: 500px;
     overflow: hidden;
-    background-color: var(--color-main); /* Color de fondo del contenedor */
-  }
-  
-  .logoAnimation {
+    background-color: var(--color-main);
+    /* Color de fondo del contenedor */
+}
+
+.logoAnimation {
     position: absolute;
     will-change: transform;
-  }
+}
+
+.cardProyects {
+    margin: 50px;
+    margin-left: 35%;
+    margin-right: -50%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.cardImg {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cardDescription {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.cardDescription:hover {
+    opacity: 1;
+}
+
+.cardTitle {
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.cardSubTitle {
+    padding: 5px;
+    font-family: Digital;
+    text-transform: capitalize;
+}
+
+.cardSkills {
+    margin: 1px;
+}
+
+.cardLogo {
+    width: 50px;
+    height: 50px;
+}
+
+.containerSkills {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 20px;
+}
