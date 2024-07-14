@@ -48,10 +48,5 @@
         "id" : 90,
         "name" : "gitHub",
         "img" : "/img/gitHub.png"
-    },
-    {
-        "id" : 9,
-        "name" : "web",
-        "img" : "/img/web.png"
     }
 ]

@@ -8,7 +8,7 @@
 :root {
     --color-main: black;
     --color-font-primary: #10e956;
-    --color-font-secondary: rgb(2, 107, 2);
+    --color-font-secondary: rgba(16, 233, 86, 0.3);
 }
 
 @font-face {
@@ -147,7 +147,6 @@ nav .containerNav {
 }
 
 .cardProyects {
-    margin: 50px;
     margin-left: 35%;
     margin-right: -50%;
     display: inline-block;
@@ -239,4 +238,58 @@ nav .containerNav {
 
 a {
     text-decoration: none;
+}
+
+.divGit, .divEmail, .divlinkedin, .divWhatsApp {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    transition: all 500ms;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.divGit {
+    background-color: #77DDFF;
+}
+.divGit:hover, .divlinkedin:hover, .divEmail:hover, .divWhatsApp:hover {
+    width: 600px;
+}
+
+.divEmail {
+    background-color: #FFB3BA;
+}
+
+
+.divlinkedin {
+    background-color: #FFEE93;
+}
+
+
+.divWhatsApp {
+    background-color:  #CAB8FF;
+}
+
+
+.logoGit {
+    width: 70px;
+    margin: 10px;
+}
+
+.containerContacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactsDescription {
+    font-size: 25px;   
+}
+
+.titleContacts {
+    font-size: 25px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }

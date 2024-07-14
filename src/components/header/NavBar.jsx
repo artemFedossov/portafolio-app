@@ -12,7 +12,7 @@ export const NavBar = () => {
                 <NavLink to="/proyectos">proyectos</NavLink>
             </li>
             <li>
-                <NavLink to="/contactos">contactos</NavLink>
+                <NavLink to="/contacto">contacto</NavLink>
             </li>
             <li>
                 <NavLink to="/curriculum">curriculum</NavLink>

@@ -14,7 +14,7 @@ export const ConfigRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/inicio" element={<Home />} />
-        <Route path="/contactos" element={<Contacts />} />
+        <Route path="/contacto" element={<Contacts />} />
         <Route path="/proyectos" element={<Proyects />} />
         <Route path="/curriculum" element={<Resume />} />
         <Route path='/*' element={<NotFound/>} />
