@@ -153,7 +153,6 @@ nav .containerNav {
     text-align: center;
     position: relative;
     overflow: hidden;
-
 }
 
 .cardImg {
@@ -215,6 +214,7 @@ nav .containerNav {
     background-color: var(--color-main);
     text-decoration: none;
     transition: transform 0.5s ease-in-out;
+    color: var(--color-font-primary)
 }
 
 .btnCards:hover {
@@ -247,17 +247,19 @@ a {
     transition: all 500ms;
     margin: 5px;
     border-radius: 5px;
+    color: black;
 }
 
-.divGit {
-    background-color: #77DDFF;
-}
 .divGit:hover, .divlinkedin:hover, .divEmail:hover, .divWhatsApp:hover {
     width: 600px;
+}
+.divGit {
+    background-color: #77DDFF;
 }
 
 .divEmail {
     background-color: #FFB3BA;
+    cursor: pointer;
 }
 
 
@@ -281,15 +283,86 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
-.contactsDescription {
-    font-size: 25px;   
 }
 
 .titleContacts {
     font-size: 25px;
     padding: 20px;
-    display: flex;
-    justify-content: center;
 }
+
+.contactsDescription {
+    font-size: 25px;   
+}
+.modal {
+    border: 1px solid var(--color-font-primary);
+    width: 500px;
+    padding: 8px;
+    border-radius: 10px;
+
+}
+
+
+
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.labelA {
+    margin-right: 11px;
+}
+
+.labelB {
+    margin-right: 31px;
+}
+
+.inputA {
+    font-family: Digital;
+    font-size: 17px;
+    width: 200px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.inputB {
+    font-family: Digital;
+    font-size: 17px;
+    width: 200px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.titleForm {
+    margin-bottom: 10px;
+}
+
+.fromC {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0;
+}
+
+.textC {
+    font-family: Digital;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btnForm {
+    font-size: 15px;
+    margin-top: -10px;
+    margin-left: 2,5px;
+}
+
+
+
