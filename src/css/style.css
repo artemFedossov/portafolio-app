@@ -283,12 +283,15 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    overflow: hidden;
 }
+
 
 .titleContacts {
     font-size: 25px;
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .contactsDescription {
@@ -299,15 +302,12 @@ a {
     width: 500px;
     padding: 8px;
     border-radius: 10px;
-
-}
-
-
-
-.modal.active {
-    visibility: visible;
+    position: absolute;
+    top: 230PX;
+    overflow: hidden;
     opacity: 1;
-  }
+    background-color: black;
+}
 
 .labelA {
     margin-right: 11px;
@@ -364,5 +364,26 @@ a {
     margin-left: 2,5px;
 }
 
+.containerHidden {
+    opacity: 0;
+}
 
+.btnClose {
+    position: absolute;
+    top: 10px;
+    right: 37px;
+    background-color: var(--color-main);
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.btnClose:hover {
+    transform: scale(1.1)
+}
+
+.btnCloseImg {
+    width: 25px;
+    height: 25px;
+}
 
