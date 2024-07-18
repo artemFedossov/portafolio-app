@@ -3,10 +3,12 @@ import React, { useState, } from 'react'
 export const Contacts = () => {
 
   const [modal, setModal] = useState(false);
+  let phoneNumber = 1562160704;
+  let message = "hola, vengo desde portafolio"
+  const url = `https://web.whatsapp.com/send/?phone=${phoneNumber}&text=${message}&type=phone_number&app_absent=0`
 
   const handleOpenFrom = () => {
     setModal(true);
-
   }
 
   const handleCloseForm = () => {
@@ -30,7 +32,7 @@ export const Contacts = () => {
         <img className='logoGit' src="/img/linkedin.png" alt="" />
         <p className='contactsDescription' >linkedin</p>
       </a>
-      <a target='_blank' className={`divWhatsApp ${modal ? 'containerHidden' : ''} `}>
+      <a target='_blank' href={url} rel="noopener noreferrer" className={`divWhatsApp ${modal ? 'containerHidden' : ''} `}>
         <img className='logoGit' src="/img/whatsApp.png" alt="" />
         <p className='contactsDescription' >whatsapp</p>
       </a>
