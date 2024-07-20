@@ -6,38 +6,31 @@ export const Resume = () => {
       <p className='titleContacts'>Curriculum</p>
 
       <div className='containerStudy'>
-          <h2 className=''>Educación</h2>
-        <div>
-        <section className='sectionA'>
-          <p>CoderHouse</p>
-          <p>Desarrollo Full Stack</p>    
-          <p>Cursado en 2024</p>    
-        </section>
-
-        <section>
-          <h2>Certificaciones</h2>
-          <ul>
-            <li>React</li>
-            <li>JavaScript</li>
-            <li>Desarrollo web</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Tecnologías aprendidas</h2>
-          <ul>
-            <li>HTML</li>
-            <li>JavaScript</li>
-            <li>CSS</li>
-            <li>React</li>
-            <li>Bootstrap</li>
-            <li>Sass</li>
-          </ul>
-        </section>
+        <h2 className='titleStudy'>Educación</h2>
+        <p className='sectionA'>CoderHouse - Desarrollo Full Stack - Cursado en 2024</p>
+        <h2 className='titleStudy'>Certificaciones</h2>
+        <p className='sectionA'>React</p>
+        <p className='sectionA'>JavaScript</p>
+        <p className='sectionA'>Desarrollo Web</p>
+        <h2 className='titleStudy'>Tecnologías aprendidas</h2>
+        <div className='grillaStudy'>
+          <p className='sectionA'>HTML</p>
+          <p className='sectionA'>JavaScript</p>
+          <p className='sectionA'>CSS</p>
+          <p className='sectionA'>React</p>
+          <p className='sectionA'>Bootstrap</p>
+          <p className='sectionA'>Sass</p>
+        </div>
+      <div>
+    </div>
 
       </div>
 
-        </div>
+
+
+
+
+
 
     </div>
 
