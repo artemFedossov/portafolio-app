@@ -14,9 +14,9 @@ export const NavBar = () => {
             <li>
                 <NavLink to="/contacto">contacto</NavLink>
             </li>
-            <li>
+            {/* <li>
                 <NavLink to="/curriculum">curriculum</NavLink>
-            </li>
+            </li> */}
         </ul>
     </nav>
   )

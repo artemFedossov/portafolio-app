@@ -4,6 +4,8 @@
     "name": "rocketRiders",
     "img": "/img/proyecto-rocketRiders.png",
     "description": "proyecto final del curso en coderHouse",
+    "web": "https://react-proyecto-nine.vercel.app/",
+    "repo": "https://github.com/artemFedossov/react-proyecto",
     "logos": [
       {
         "name": "CSS",
@@ -20,6 +22,28 @@
       {
         "name": "Firebase",
         "img": "/img/firebase.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Portafolio",
+    "img": "/img/portafolio.png",
+    "description": "portafolio personal",
+    "web": "https://portafolio-app-two.vercel.app/",
+    "repo": "https://github.com/artemFedossov/portafolio-app",
+    "logos": [
+      {
+        "name": "CSS",
+        "img": "/img/css.png"
+      },
+      {
+        "name": "JS",
+        "img": "/img/js.png"
+      },
+      {
+        "name": "React",
+        "img": "/img/react.png"
       }
     ]
   }

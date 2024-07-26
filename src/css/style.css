@@ -46,23 +46,24 @@ body {
 }
 
 .containerLogo .logo {
-    width: 150px;
-    margin: 10px;
-    filter: brightness(300%);
+    width: 120px;   
+    margin-top: -10px;
 }
+
+
 
 .containerLogo .titleLogo {
     color: var(--color-font-primary);
     display: block;
-    padding-top: 20px;
+    padding-top: 19px;
     flex-basis: 100px;
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
 .containerLogo .subTitle {
     color: var(--color-font-secondary);
-    padding-top: 120px;
+    padding-top: 100px;
     margin-left: -30px;
     margin-bottom: 5px;
 }
@@ -150,13 +151,18 @@ nav .containerNav {
     will-change: transform;
 }
 
+.containerProyect {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
 .cardProyects {
-    margin-left: 35%;
-    margin-right: -50%;
-    display: inline-block;
+    border: #10e956 1px solid;
     text-align: center;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .cardImg {
@@ -221,7 +227,7 @@ nav .containerNav {
     color: var(--color-font-primary)
 }
 
-.btnCards:hover {
+.btnCards:hover, .btnHome:hover {
     transform: scale(1.1);
 }
 
@@ -238,6 +244,26 @@ nav .containerNav {
     top: -4px;
     color: var(--color-font-primary);
     transition: transform 0.5s ease-in-out;
+}
+
+.btnHome {
+    width: 200px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: var(--color-font-primary) 1px solid;
+    background-color: var(--color-main);
+    text-decoration: none;
+    transition: transform 0.5s ease-in-out;
+    color: var(--color-font-primary)
+}
+
+.containerBtn {
+    display: flex;
+    justify-content: center;
+    margin-left: -30px;
 }
 
 a {
@@ -441,4 +467,8 @@ a {
     top: 100px;
     right: 400px;
     width: 650px;
+}
+
+a {
+    display: inline-block;
 }

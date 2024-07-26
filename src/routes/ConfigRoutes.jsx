@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "../components/Home";
 import { Proyects } from "../components/Proyects";
 import { Contacts } from "../components/Contacts";
-import { Resume } from "../components/Resume";
+/* import { Resume } from "../components/Resume"; */
 import { NotFound } from "../components/NotFound";
 import { HeaderNav } from "../components/header/HeaderNav";
 
@@ -16,7 +16,7 @@ export const ConfigRoutes = () => {
         <Route path="/inicio" element={<Home />} />
         <Route path="/contacto" element={<Contacts />} />
         <Route path="/proyectos" element={<Proyects />} />
-        <Route path="/curriculum" element={<Resume />} />
+        {/* <Route path="/curriculum" element={<Resume />} /> */}
         <Route path='/*' element={<NotFound/>} />
       </Routes>
     </BrowserRouter>
