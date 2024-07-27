@@ -18,23 +18,30 @@ export const Home = () => {
             </p>
           </div>
           <div className="containerBtn">
+
+            {/* Enlace para descargar el CV */}
             <a
               href="/cv/cv.pdf"
               download="Artem-Fedossov-CV.pdf"
               className="btnHome"
+              aria-label="Descargar CV"
             >
               <p className="btnDesc">Descargar CV</p>
             </a>
 
+            {/* Enlace al repositorio de GitHub */}
             <a
               target="_blank"
               href="https://github.com/artemFedossov"
               className="btnHome"
+              aria-label="Repositorio GitHub"
             >
               <p className="btnDesc">Repositorio GitHub</p>
             </a>
           </div>
         </div>
+
+        {/* Componente de animación del logo */}
         <div className="containerCenter">
           <LogoAnimation />
         </div>

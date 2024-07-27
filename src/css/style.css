@@ -1,14 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Robot', Arial, sans-serif;
-    /* border: 1px solid red; */
-}
-
-ul {
-    list-style: none;
-}
-
+                                /***   Fuente   ***/
 :root {
     --color-main: black;
     --color-font-primary: #10e956;
@@ -29,11 +19,32 @@ ul {
     font-style: normal;
 }
 
+
+
+                                /***   Generales   ***/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Robot', Arial, sans-serif;
+}
+
 body {
     background-color: var(--color-main);
     color: var(--color-font-primary);
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+                                /***   HeaderNav   ***/
 .header {
     background-color: var(--color-main);
     display: flex;
@@ -41,18 +52,18 @@ body {
     border-bottom: var(--color-font-primary) 1px solid;
 }
 
+
+                                /***   Logo   ***/
 .containerLogo {
     display: flex;
 }
 
-.containerLogo .logo {
+.logo {
     width: 120px;   
     margin-top: -10px;
 }
 
-
-
-.containerLogo .titleLogo {
+.titleLogo {
     color: var(--color-font-primary);
     display: block;
     padding-top: 19px;
@@ -61,13 +72,15 @@ body {
     text-transform: uppercase;
 }
 
-.containerLogo .subTitle {
+.subTitle {
     color: var(--color-font-secondary);
     padding-top: 100px;
     margin-left: -30px;
     margin-bottom: 5px;
 }
 
+
+                                /***   NavBar   ***/
 nav {
     display: flex;
     justify-content: center;
@@ -75,7 +88,7 @@ nav {
     margin-right: 200px;
 }
 
-nav .containerNav {
+.containerNav {
     display: flex;
 }
 
@@ -92,184 +105,40 @@ nav .containerNav {
     transition: all 250ms;
     font-weight: 300;
 }
-
 .containerNav li a:hover {
     font-size: 20px;
 }
 
-.containerText {
-    width: 90%;
-    margin: 10px
-}
 
-.text:hover {
-    box-shadow: 0 0 20px rgba(149, 238, 178, 1);
-}
-
-.text {
-    color: var(--color-font-primary);
-    font-family: 'Digital';
-    margin: 10px;
-    padding: 10px;
-    font-size: 17px;
-    border: var(--color-font-primary) 1px solid;
-    border-radius: 10px;
-}
-
-.textName {
-    background-color: rgba(2, 107, 2, .200);
-    color: var(--color-font-primary);
-    width: 200px;
-    margin: 10px;
-    margin-left: 20px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.containerInicio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.containerCenter {
+                                /***   Contacts   ***/
+.containerContacts {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.conteinerAnimation {
-    position: relative;
-    width: 500px;
-    height: 500px;
     overflow: hidden;
-    background-color: var(--color-main);
-    /* Color de fondo del contenedor */
 }
 
-.logoAnimation {
-    position: absolute;
-    will-change: transform;
-}
-
-.containerProyect {
+.titleContacts {
+    font-size: 25px;
+    padding: 20px;
     display: flex;
     justify-content: center;
-    gap: 50px;
 }
 
-.cardProyects {
-    border: #10e956 1px solid;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
+.divGit {
+    background-color: #77DDFF;
 }
-
-.cardImg {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.cardDescription {
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    height: 100%;
-}
-
-.cardDescription:hover {
-    opacity: 1;
-}
-
-.cardTitle {
-    padding: 20px 0;
-    font-size: 20px;
-}
-
-.cardSubTitle {
-    padding: 5px;
-    font-family: Digital;
-    text-transform: capitalize;
-}
-
-.cardSkills {
-    margin: 1px;
-}
-
-.cardLogo {
-    width: 50px;
-    height: 50px;
-}
-
-.containerSkills {
-    display: flex;
-    justify-content: center;
-    gap: 3px;
-    margin-top: 20px;
-}
-
-.btnCards {
-    width: 100px;
+.divEmail {
+    background-color: #FFB3BA;
     cursor: pointer;
-    padding: 2px;
-    margin: 5px;
-    margin-top: 30px;
-    border-radius: 5px;
-    border: var(--color-font-primary) 1px solid;
-    background-color: var(--color-main);
-    text-decoration: none;
-    transition: transform 0.5s ease-in-out;
-    color: var(--color-font-primary)
 }
-
-.btnCards:hover, .btnHome:hover {
-    transform: scale(1.1);
+.divlinkedin {
+    background-color: #FFEE93;
 }
-
-.btnLogo {
-    width: 20px;
-    margin-top: 2px;
-    margin-left: -20px;
+.divWhatsApp {
+    background-color:  #CAB8FF;
 }
-
-.btnDesc {
-    position: relative;
-    display: inline;
-    left: 2px;
-    top: -4px;
-    color: var(--color-font-primary);
-    transition: transform 0.5s ease-in-out;
-}
-
-.btnHome {
-    width: 200px;
-    cursor: pointer;
-    padding: 10px;
-    margin: 10px;
-    margin-top: 15px;
-    border-radius: 5px;
-    border: var(--color-font-primary) 1px solid;
-    background-color: var(--color-main);
-    text-decoration: none;
-    transition: transform 0.5s ease-in-out;
-    color: var(--color-font-primary)
-}
-
-.containerBtn {
-    display: flex;
-    justify-content: center;
-    margin-left: -30px;
-}
-
-a {
-    text-decoration: none;
-}
-
 .divGit, .divEmail, .divlinkedin, .divWhatsApp {
     display: flex;
     align-items: center;
@@ -279,54 +148,23 @@ a {
     border-radius: 5px;
     color: black;
 }
-
 .divGit:hover, .divlinkedin:hover, .divEmail:hover, .divWhatsApp:hover {
     width: 600px;
 }
-.divGit {
-    background-color: #77DDFF;
+
+.containerHidden {
+    opacity: 0;
 }
 
-.divEmail {
-    background-color: #FFB3BA;
-    cursor: pointer;
-}
-
-
-.divlinkedin {
-    background-color: #FFEE93;
-}
-
-
-.divWhatsApp {
-    background-color:  #CAB8FF;
-}
-
-
-.logoGit {
+.logoContacts {
     width: 70px;
     margin: 10px;
-}
-
-.containerContacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-
-.titleContacts {
-    font-size: 25px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
 }
 
 .contactsDescription {
     font-size: 25px;   
 }
+
 .modal {
     border: 1px solid var(--color-font-primary);
     width: 500px;
@@ -337,6 +175,28 @@ a {
     overflow: hidden;
     opacity: 1;
     background-color: black;
+}
+
+.titleForm {
+    margin-bottom: 10px;
+}
+
+.btnClose {
+    position: absolute;
+    top: 10px;
+    right: 37px;
+    background-color: var(--color-main);
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+.btnClose:hover {
+    transform: scale(1.1)
+}
+
+.btnCloseImg {
+    width: 25px;
+    height: 25px;
 }
 
 .labelA {
@@ -369,11 +229,7 @@ a {
     outline: none;
 }
 
-.titleForm {
-    margin-bottom: 10px;
-}
-
-.fromC {
+.fromText {
     display: flex;
     flex-direction: column;
     margin: 12px 0;
@@ -388,35 +244,183 @@ a {
     outline: none;
 }
 
+.btnCards {
+    width: 100px;
+    cursor: pointer;
+    padding: 2px;
+    margin: 5px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: var(--color-font-primary) 1px solid;
+    background-color: var(--color-main);
+    text-decoration: none;
+    transition: transform 0.5s ease-in-out;
+    color: var(--color-font-primary)
+}
+.btnCards:hover, .btnHome:hover {
+    transform: scale(1.1);
+}
+
 .btnForm {
     font-size: 15px;
     margin-top: -10px;
     margin-left: 2,5px;
 }
 
-.containerHidden {
-    opacity: 0;
+
+                                /***   Home   ***/
+.containerInicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.btnClose {
-    position: absolute;
-    top: 10px;
-    right: 37px;
-    background-color: var(--color-main);
-    width: 10px;
-    height: 10px;
+.textName {
+    background-color: rgba(2, 107, 2, .200);
+    color: var(--color-font-primary);
+    width: 200px;
+    margin: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.containerText {
+    width: 90%;
+    margin: 10px
+}
+
+.text {
+    color: var(--color-font-primary);
+    font-family: 'Digital';
+    margin: 10px;
+    padding: 10px;
+    font-size: 17px;
+    border: var(--color-font-primary) 1px solid;
+    border-radius: 10px;
+}
+.text:hover {
+    box-shadow: 0 0 20px rgba(149, 238, 178, 1);
+}
+
+.containerBtn {
+    display: flex;
+    justify-content: center;
+    margin-left: -30px;
+}
+
+.btnHome {
+    width: 200px;
     cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: var(--color-font-primary) 1px solid;
+    background-color: var(--color-main);
+    text-decoration: none;
+    transition: transform 0.5s ease-in-out;
+    color: var(--color-font-primary)
 }
 
-.btnClose:hover {
-    transform: scale(1.1)
+.btnDesc {
+    position: relative;
+    display: inline;
+    left: 2px;
+    top: -4px;
+    color: var(--color-font-primary);
+    transition: transform 0.5s ease-in-out;
 }
 
-.btnCloseImg {
-    width: 25px;
-    height: 25px;
+.containerCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
+                                /***   LogoAnimation   ***/
+.conteinerAnimation {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    background-color: var(--color-main);
+}
+
+.logoAnimation {
+    position: absolute;
+    will-change: transform;
+}
+
+
+                                /***   NotFound   ***/
+
+
+                                /***   Proyect   ***/
+.containerProyect {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.cardProyects {
+    border: #10e956 1px solid;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cardImg {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cardDescription {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+.cardDescription:hover {
+    opacity: 1;
+}
+
+.cardTitle {
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.cardSubTitle {
+    padding: 5px;
+    font-family: Digital;
+    text-transform: capitalize;
+}
+
+.containerSkills {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 20px;
+}
+
+.cardLogo {
+    width: 50px;
+    height: 50px;
+}
+
+.btnLogo {
+    width: 20px;
+    margin-top: 2px;
+    margin-left: -20px;
+}
+
+                                /***   Resume   ***/
 .containerStudy {
     display: flex;
     justify-content: center;
@@ -455,13 +459,6 @@ a {
     border: #10e956 1px solid;
 }
 
-.grillaStudy {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    width: 500px;
-}
-
 .certificate {
     position: absolute;
     top: 100px;
@@ -469,6 +466,44 @@ a {
     width: 650px;
 }
 
-a {
-    display: inline-block;
+.grillaStudy {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 500px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

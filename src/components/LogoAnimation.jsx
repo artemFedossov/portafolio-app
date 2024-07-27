@@ -7,20 +7,20 @@ export const LogoAnimation = () => {
 
 
     useEffect(() => {
+
+      // Función para crear los logos iniciales y manejar la animación
         const createLogos = () => {
           const newLogos = [];
-    
-          // Recorrer los datos de logos y crear objetos de logo
           data.forEach(logo => {
             const newLogo = {
-              x: Math.random() * (500 - 70),
-              y: Math.random() * (500 - 70), 
-              dx: (Math.random() - 0.5) * 10,
-              dy: (Math.random() - 0.5) * 10, 
-              size: 70,
-              image: logo.img,
-              id: logo.id,
-              name: logo.name
+              x: Math.random() * (500 - 70), // Posición inicial aleatoria en X
+              y: Math.random() * (500 - 70), // Posición inicial aleatoria en Y
+              dx: (Math.random() - 0.5) * 10, // Velocidad inicial en X
+              dy: (Math.random() - 0.5) * 10, // Velocidad inicial en Y
+              size: 70, // Tamaño del logo
+              image: logo.img, // URL de la imagen del logo desde los datos del JSON
+              id: logo.id, // ID único del logo
+              name: logo.name // Nombre del logo
             };
             newLogos.push(newLogo);
           });

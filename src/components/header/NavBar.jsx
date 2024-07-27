@@ -1,6 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
+
+// Componente NavBar que muestra una barra de navegación con enlaces a diferentes secciones
 export const NavBar = () => {
   return (
     <nav>
